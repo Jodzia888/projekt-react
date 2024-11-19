@@ -13,6 +13,7 @@ import Result from './Result';
     },[city])
 
     function getWetherData(){
+      //cos
 
     }
 
