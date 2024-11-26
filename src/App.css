@@ -1,0 +1,104 @@
+/* Globalne style */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Zapewnia pełną wysokość */
+  width: 100vw;  /* Zapewnia pełną szerokość */
+  background-color: #f0f0f0; /* Jasnoszare tło */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif; /* Nowoczesna czcionka */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.app-container {
+  background: #ffffff; /* Białe tło dla formularza */
+  padding: 30px;
+  border-radius: 12px; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Formularz */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Pola wyboru i flagi */
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: border-color 0.2s ease-in-out;
+  flex: 1;
+}
+
+select:focus {
+  border-color: #74ebd5;
+  outline: none;
+}
+
+/* Flagi */
+.flag-container {
+  width: 30px;
+  height: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}  
+
+/* Przycisk */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Wynik */
+.conversion-result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  margin-top: 15px;
+}
